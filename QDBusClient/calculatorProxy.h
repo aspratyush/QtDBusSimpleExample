@@ -8,8 +8,8 @@
  * Do not edit! All changes made to it will be lost.
  */
 
-#ifndef CALCULATORPROXY_H_1436426367
-#define CALCULATORPROXY_H_1436426367
+#ifndef CALCULATORPROXY_H_1436436036
+#define CALCULATORPROXY_H_1436436036
 
 #include <QtCore/QObject>
 #include <QtCore/QByteArray>

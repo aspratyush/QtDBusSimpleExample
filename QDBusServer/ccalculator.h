@@ -4,21 +4,21 @@
 #include <QObject>
 #include <iostream>
 
-class CCalculator : public QObject
+/**** project includes ****/
+#include "icalculator.h"
+
+class CCalculator : public ICalculator
 {
     Q_OBJECT
-    //D-Bus interface name
-    Q_CLASSINFO("D-Bus Interface", "com.wp.asp.Calculator")
+// shifted to Interface class
+//    //D-Bus interface name
+//    Q_CLASSINFO("D-Bus Interface", "com.wp.asp.Calculator")
 public:
-    explicit CCalculator(QObject *parent = 0);
+    explicit CCalculator();
     ~CCalculator(){}
 
-signals:
-
-public slots:
-
     /**
-     * @brief helloWorld hello world from QDBus
+     * @brief helloWorld implements the inherited hello world
      */
     virtual QString helloWorld();
 
@@ -31,7 +31,7 @@ public slots:
     virtual int addition(int a, int b);
 
     /**
-     * @brief subtraction subtract two nos.
+     * @brief subtraction implements the inherited subtraction
      * @param a int
      * @param b int
      * @return int
@@ -39,7 +39,7 @@ public slots:
     virtual int subtraction(int a, int b);
 
     /**
-     * @brief multiple multiply two nos.
+     * @brief multiple implements the inherited multiply
      * @param a int
      * @param b int
      * @return int
@@ -47,12 +47,16 @@ public slots:
     virtual int multiply(int a, int b);
 
     /**
-     * @brief divide divide two nos.
+     * @brief divide implements the inherited divide
      * @param a int
      * @param b int
      * @return float
      */
     virtual double divide(int a, int b);
+
+signals:
+
+public slots:
 
 };
 

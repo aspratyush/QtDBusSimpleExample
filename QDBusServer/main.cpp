@@ -3,6 +3,7 @@
 #include <memory>
 
 /**** project includes****/
+#include "icalculator.h"
 #include "ccalculator.h"
 #include "calculatorAdapter.h"
 
@@ -11,7 +12,7 @@ int main(int argc, char *argv[])
     QCoreApplication a(argc, argv);
 
     //init Obj
-    CCalculator* cal = new CCalculator();
+    ICalculator* cal = new CCalculator();
 
     //inject Obj to DbusAdapter
     new CalculatorAdaptor(cal);

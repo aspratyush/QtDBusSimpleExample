@@ -21,4 +21,5 @@ SOURCES += main.cpp \
         calculatorAdapter.cpp
 
 HEADERS += ccalculator.h \
-        calculatorAdapter.h
+        calculatorAdapter.h \
+    icalculator.h

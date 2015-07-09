@@ -9,8 +9,8 @@
  * before re-generating it.
  */
 
-#ifndef CALCULATORADAPTER_H_1436426363
-#define CALCULATORADAPTER_H_1436426363
+#ifndef CALCULATORADAPTER_H_1436436027
+#define CALCULATORADAPTER_H_1436436027
 
 #include <QtCore/QObject>
 #include <QtDBus/QtDBus>

@@ -1,9 +1,6 @@
 #include "ccalculator.h"
 
-CCalculator::CCalculator(QObject *parent) :
-    QObject(parent)
-{
-}
+CCalculator::CCalculator(){}
 
 //helloworld
 QString CCalculator::helloWorld(){
