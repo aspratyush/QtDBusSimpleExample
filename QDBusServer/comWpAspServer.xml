@@ -1,0 +1,28 @@
+<!DOCTYPE node PUBLIC "-//freedesktop//DTD D-BUS Object Introspection 1.0//EN" "http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd">
+<node>
+  <interface name="com.wp.asp.Calculator">
+    <method name="helloWorld">
+      <arg type="s" direction="out"/>
+    </method>
+    <method name="addition">
+      <arg type="i" direction="out"/>
+      <arg name="a" type="i" direction="in"/>
+      <arg name="b" type="i" direction="in"/>
+    </method>
+    <method name="subtraction">
+      <arg type="i" direction="out"/>
+      <arg name="a" type="i" direction="in"/>
+      <arg name="b" type="i" direction="in"/>
+    </method>
+    <method name="multiply">
+      <arg type="i" direction="out"/>
+      <arg name="a" type="i" direction="in"/>
+      <arg name="b" type="i" direction="in"/>
+    </method>
+    <method name="divide">
+      <arg type="d" direction="out"/>
+      <arg name="a" type="i" direction="in"/>
+      <arg name="b" type="i" direction="in"/>
+    </method>
+  </interface>
+</node>
