@@ -2,8 +2,8 @@
 #define SIGNALHANDLER_H
 
 #include <QObject>
-#include "calculatorProxy.h"
 #include <iostream>
+#include "calculatorProxy.h"
 
 class SignalHandler : public QObject
 {

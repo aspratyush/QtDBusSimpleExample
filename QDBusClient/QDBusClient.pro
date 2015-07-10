@@ -17,8 +17,10 @@ CONFIG      -= app_bundle
 TEMPLATE    = app
 
 HEADERS     += calculatorProxy.h \
-    signalhandler.h
+    signalhandler.h \
+    menucreator.h
 
 SOURCES     += main.cpp \
             calculatorProxy.cpp \
-    signalhandler.cpp
+    signalhandler.cpp \
+    menucreator.cpp
