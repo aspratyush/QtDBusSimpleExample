@@ -13,9 +13,11 @@ public:
 
     virtual ~ICalculator(){}
 
-signals:
+Q_SIGNALS:
 
-public slots:
+    void computationCompleted(const QString &str);
+
+public Q_SLOTS:
 
     /**
      * @brief helloWorld hello world from QDBus

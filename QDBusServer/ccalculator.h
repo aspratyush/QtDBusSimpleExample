@@ -56,6 +56,8 @@ public:
 
 signals:
 
+    //void computationCompleted(QString str);
+
 public slots:
 
 };

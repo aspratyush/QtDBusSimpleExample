@@ -9,8 +9,8 @@
  * before re-generating it.
  */
 
-#ifndef CALCULATORADAPTER_H_1436436027
-#define CALCULATORADAPTER_H_1436436027
+#ifndef CALCULATORADAPTER_H_1436525709
+#define CALCULATORADAPTER_H_1436525709
 
 #include <QtCore/QObject>
 #include <QtDBus/QtDBus>
@@ -30,6 +30,9 @@ class CalculatorAdaptor: public QDBusAbstractAdaptor
     Q_CLASSINFO("D-Bus Interface", "com.wp.asp.Calculator")
     Q_CLASSINFO("D-Bus Introspection", ""
 "  <interface name=\"com.wp.asp.Calculator\">\n"
+"    <signal name=\"computationCompleted\">\n"
+"      <arg direction=\"out\" type=\"s\" name=\"str\"/>\n"
+"    </signal>\n"
 "    <method name=\"helloWorld\">\n"
 "      <arg direction=\"out\" type=\"s\"/>\n"
 "    </method>\n"
@@ -67,6 +70,7 @@ public Q_SLOTS: // METHODS
     int multiply(int a, int b);
     int subtraction(int a, int b);
 Q_SIGNALS: // SIGNALS
+    void computationCompleted(const QString &str);
 };
 
 #endif

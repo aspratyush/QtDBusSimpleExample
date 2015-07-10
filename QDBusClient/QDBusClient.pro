@@ -16,7 +16,9 @@ CONFIG      -= app_bundle
 
 TEMPLATE    = app
 
-HEADERS     += calculatorProxy.h
+HEADERS     += calculatorProxy.h \
+    signalhandler.h
 
 SOURCES     += main.cpp \
-            calculatorProxy.cpp
+            calculatorProxy.cpp \
+    signalhandler.cpp

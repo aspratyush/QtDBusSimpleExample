@@ -1,6 +1,9 @@
 <!DOCTYPE node PUBLIC "-//freedesktop//DTD D-BUS Object Introspection 1.0//EN" "http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd">
 <node>
   <interface name="com.wp.asp.Calculator">
+    <signal name="computationCompleted">
+      <arg name="str" type="s" direction="out"/>
+    </signal>
     <method name="helloWorld">
       <arg type="s" direction="out"/>
     </method>

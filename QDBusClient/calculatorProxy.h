@@ -8,8 +8,8 @@
  * Do not edit! All changes made to it will be lost.
  */
 
-#ifndef CALCULATORPROXY_H_1436436036
-#define CALCULATORPROXY_H_1436436036
+#ifndef CALCULATORPROXY_H_1436525716
+#define CALCULATORPROXY_H_1436525716
 
 #include <QtCore/QObject>
 #include <QtCore/QByteArray>
@@ -71,6 +71,7 @@ public Q_SLOTS: // METHODS
     }
 
 Q_SIGNALS: // SIGNALS
+    void computationCompleted(const QString &str);
 };
 
 namespace com {
